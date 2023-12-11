@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Create New Patient Record</title>
+		<link rel="stylesheet" href="dcreate-patient.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Create New Patient Record</h1>
+			<form id="create-patient-form">
+				<div class="form-column left-column">
+					<div class="form-group">
+						<label for="OHIP">OHIP Number</label>
+						<input type="text" id="OHIP" name="OHIP" required>
+					</div>
+					<div class="form-group">
+						<label for="firstName">First Name:</label>
+						<input type="text" id="firstName" name="firstName" required>
+					</div>
+					<div class="form-group">
+						<label for="lastName">Last Name:</label>
+						<input type="text" id="lastName" name="lastName" required>
+					</div>
+					<div class="form-group">
+						<label for="gender">Gender:</label>
+						<select id="gender" name="gender" required>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="dateOfBirth">Date of Birth:</label>
+						<input type="date" id="dateOfBirth" name="dateOfBirth" required>
+					</div>
+					<div class="form-group">
+						<label for="contactNumber">Contact Number:</label>
+						<input type="tel" id="contactNumber" name="contactNumber" required>
+					</div>
+					<div class="form-group">
+						<label for="emergencyContactName">Emergency Contact Name:</label>
+						<input type="text" id="emergencyContactName" name="emergencyContactName" required>
+					</div>
+					<div class="form-group">
+						<label for="emergencyContactNumber">Emergency Contact Number:</label>
+						<input type="tel" id="emergencyContactNumber" name="emergencyContactNumber" required>
+					</div>
+					<div class="form-group">
+						<label for="weight">Weight (kg):</label>
+						<input type="number" id="weight" name="weight" step="0.01" required>
+					</div>
+					<div class="form-group">
+						<label for="height">Height (cm):</label>
+						<input type="number" id="height" name="height" step="0.01" required>
+					</div>
+					<div class="form-group">
+						<label for="bloodType">Blood Type:</label>
+						<input type="text" id="bloodType" name="bloodType" required>
+					</div>
+					<div class="form-group">
+						<label for="allergies">Allergies:</label>
+						<input type="text" id="allergies" name="allergies" required>
+					</div>
+					<div class="form-group">
+						<label for="medicalHistory">Medical History:</label>
+						<textarea id="medicalHistory" name="medicalHistory" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="currentSymptoms">Current Symptoms:</label>
+						<textarea id="currentSymptoms" name="currentSymptoms" required></textarea>
+					</div>
+				</div>
+
+				<div class="form-column right-column">
+					<div class="form-group">
+						<label for="FullMedicalHistory">Full Medical History:</label>
+						<textarea id="FullMedicalHistory" name="FullMedicalHistory" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="DiagnosticTests">Diagnostic Tests:</label>
+						<textarea id="DiagnosticTests" name="DiagnosticTests" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="Procedures">Procedures:</label>
+						<textarea id="Procedures" name="Procedures" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="MedicationHistory">Medication History:</label>
+						<textarea id="MedicationHistory" name="MedicationHistory" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="AllergiesAndReactions">Allergies and Reactions:</label>
+						<textarea id="AllergiesAndReactions" name="AllergiesAndReactions" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="FamilyMedicalHistory">Family Medical History:</label>
+						<textarea id="FamilyMedicalHistory" name="FamilyMedicalHistory" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="TreatmentPlans">Treatment Plans:</label>
+						<textarea id="TreatmentPlans" name="TreatmentPlans" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="ConsultationNotes">Consultation Notes:</label>
+						<textarea id="ConsultationNotes" name="ConsultationNotes" required></textarea>
+					</div>
+				</div>
+				<button type="submit">Create Patient Record</button>
+			</form>
+			<p id="message"></p>
+		</div>
+		<script src="create-patient.js"></script>
+	</body>
+</html>
+
